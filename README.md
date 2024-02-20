@@ -1,8 +1,10 @@
-# React + Vite
+# INTRODUCTION
+This is  a frontend web application that uses dummy data to display a ecommerce application.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# LOGIN 
+In case if you want to check the site ,login using this user credentials . 
+Username: atuny0
+Password: 9uQFF1Lh
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# TECHNOLOGY
+REACT JS
