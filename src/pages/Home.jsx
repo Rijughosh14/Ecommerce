@@ -77,6 +77,13 @@ const Home = () => {
     SetCartTotalPrice(cartTotalPrice+price)
   }
 
+  const RemoveFromCart=(id,price)=>{
+    SetcartCount(cartCount-1)
+    const list=cartList.filter((data)=>data!==id)
+    SetCartList(list)
+    SetCartTotalPrice(cartTotalPrice-price)
+  }
+
 
   useEffect(() => {
     products()
@@ -163,7 +170,9 @@ const Home = () => {
                     </div>
                     <div>
                       {
-                        cartList.includes(data.id)?<button className='bg-green-300 text-white text-lg font-semibold rounded-xl hover:shadow-lg px-3'
+                        cartList.includes(data.id)?
+                        <button className='bg-green-300 text-white text-lg font-semibold rounded-xl hover:shadow-lg px-3'
+                        onClick={()=>RemoveFromCart(data.id,data.price)}
                         >
                           Already Added
                         </button>
